@@ -19,7 +19,7 @@ const initialState: InputState = {
   descriptionColor: '',
   mainBgColor: '',
   titleBorderRadius: 0,
-  fontSize: 12,
+  fontSize: 0,
 };
 
 const inputSlice = createSlice({

@@ -9,10 +9,10 @@ function PageView() {
   return (
     <div style={{ background: inputState.mainBgColor, borderRadius: inputState.titleBorderRadius }} className='box'>
       <div className='title-box'>
-        <h1 style={{ color: inputState.titleColor, fontSize: inputState.fontSize }}>
+        <h1 style={{ color: inputState.titleColor, fontSize: inputState.fontSize + "px" }}>
           {inputState.title}
         </h1>
-        <p style={{ color: inputState.descriptionColor, fontSize: inputState.fontSize }}>
+        <p style={{ color: inputState.descriptionColor, fontSize: inputState.fontSize + "px" }}>
           {inputState.description}
         </p>
       </div>

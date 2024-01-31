@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateInput } from '../../store/reducers';
 import { RootState } from '../../store';
 import PageView from '../pageView';
+import "./style.css"
 
 function Actions() {
   const inputState = useSelector((state: RootState) => state.input);
@@ -22,14 +23,14 @@ function Actions() {
 
   return (
     <div>
-      <div>
+      <div className='input-box'>
         <input type="text" name="title" value={inputState.title} onChange={handleChange} />
         <input type="text" name="description" value={inputState.description} onChange={handleChange} />
         <input type="color" name="titleColor" value={inputState.titleColor} onChange={handleChange} />
         <input type="color" name="descriptionColor" value={inputState.descriptionColor} onChange={handleChange} />
         <input type="color" name="mainBgColor" value={inputState.mainBgColor} onChange={handleChange} />
         <input type="range" name="titleBorderRadius" value={inputState.titleBorderRadius} onChange={handleChange} />
-        <input type="range" name="titleFontSize" value={inputState.fontSize} onChange={handleChange} />
+        <input type="range" name="fontSize" value={inputState.fontSize} onChange={handleChange} />
         <button onClick={handleClick}>Click</button>
       </div>
       {showPageView && <PageView />}

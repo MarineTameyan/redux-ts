@@ -1,19 +1,23 @@
-.box{
-    max-width: 2000px;
-    max-height: 2000px;
+.input-box{
     border: 1px solid black;
-}
-
-.title-box h1{
-    text-align: center;
-}
-
-.title-box p{
-    text-align: center;
-}
-
-.title-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px;
+    gap: 15px;
     height: 400px;
-    width: 400px;
-    border: 1px solid black;
+    justify-content: center;
+    padding: 50px;
+}
+
+.input-box input{
+    height: 30px;
+    width: 200px;
+    
+}
+
+.input-box button{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
 }

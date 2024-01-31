@@ -2,9 +2,10 @@
 import './App.css';
 import Actions from './components/Actions';
 
+
 function App() {
   return (
-    <div>
+    <div style={{display:'flex'}}>
       <Actions/>
     </div>
   )
